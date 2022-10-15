@@ -48,6 +48,28 @@ nav{
   margin-top: -180px;
   margin-right: -30px;
 }
+
+
+
+@media only screen and (max-width:1080px) {
+  .header-image{
+    width: 400px;
+    height: 460px;
+  }
+}
+@media only screen and (max-width:917px) {
+  .header-image{
+    width: 300px;
+    height: 460px;
+  }
+}
+@media only screen and (max-width:815px) {
+  .header-image{
+   display: none;
+  }
+}
+
+
 .companies{
   margin-top: 20px;
   margin-left: 70px;
@@ -105,7 +127,12 @@ nav{
   align-items: center;
   font-size: 2rem;
  }
-
+@media screen and (max-width:1116px){
+  .card:last-child::after {
+    content: ">";
+    display: none;
+   }
+}
 
  .blog-heading {
   margin-top: 84px;
@@ -179,7 +206,39 @@ nav{
   font-size: 12px;
   font-weight: 900;
  }
-
+ @media screen and (max-width:1170px){
+  .blog-cards {
+    gap: 40px;
+  }
+  .blog-card {
+    height: auto;
+    margin-bottom: 20px;
+  }
+  .blog-image {
+    width: 100px;
+   }
+   .blog-image img {
+    width: 100%;
+   }
+   .blog-content {
+    padding: 10px 30px 20px 30px;
+   }
+   .blog-bottom {
+    left: 0px;
+    bottom: -20px;
+  }
+  div.blog-author {
+    left: 0;
+    bottom: -40px;
+   }
+   .blog-heading {
+    padding: 0 20px;
+   }
+   .blog-heading h1 {
+      font-size: 2.2rem;
+   }
+ }
+ 
  .faq-section {
   margin-top: 124px;
   padding: 0 90px;
@@ -218,7 +277,16 @@ nav{
   border: none;
   border-radius: 5px;
  }
-
+ @media screen and (max-width:1219px){
+  .faq-section .faq-content {
+    position: relative;
+    z-index: 2;
+  }
+  .faq-section .faq-image {
+    opacity: .1;
+    z-index: 1;
+  }
+ }
 
 
 .download-section {
@@ -258,6 +326,24 @@ nav{
   border: none;
   padding: 10px 30px;
   border-radius: 50px;
+}
+@media screen and (max-width:1066px){
+  .download-content span {
+    font-weight: 50;
+  }
+.download-section .download-email {
+  position: relative;
+}
+.download-section {
+  padding: 0 10px;
+}
+.download-section .download-email form input {
+  display: block;
+  padding: 15px 10px 15px 20px;
+}
+.download-section .download-email form button {
+  display: none;
+}
 }
 
 .footer-section {
